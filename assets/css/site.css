@@ -67,6 +67,17 @@
   --hill: #23913F; --hill-2: #A6D68A; --gold: #F3B62D; --gold-ink: #101A12;
   --deep: #0E2C18; --on-deep: #FFFFFF; --on-deep-muted: #BFD3C3; color-scheme: light;
 }
+:root[data-palette="sunset"] {
+  --bg: #17120E; --surface: #221A14; --ink: #F4ECE2; --muted: #C2B4A4;
+  --hill: #D9822F; --hill-2: #8A5A36; --gold: #F2A541; --gold-ink: #17120E;
+  --deep: #0D0A08; --on-deep: #F4ECE2; --on-deep-muted: #BFB0A0;
+  --draft: #F0CF85; --draft-bg: #33260F; color-scheme: dark;
+}
+:root[data-palette="spring"] {
+  --bg: #F5F7EF; --surface: #E7EDDA; --ink: #17220F; --muted: #48553A;
+  --hill: #3F7F2A; --hill-2: #D8C437; --gold: #E3C22C; --gold-ink: #17220F;
+  --deep: #1C3516; --on-deep: #F5F7EF; --on-deep-muted: #C6D3B6; color-scheme: light;
+}
 :root[data-palette="dusk"] {
   --bg: #F5F1EC; --surface: #E9E2D9; --ink: #221B16; --muted: #574A40;
   --hill: #3D5A3A; --hill-2: #B7A27E; --gold: #D9923A; --gold-ink: #221B16;
@@ -158,7 +169,7 @@ html[lang="en"] .hero h1 { font-size: clamp(2.5rem, 5.6vw, 5.5rem); }
   inset-inline-end: -4vw; bottom: -3rem;
 }
 .hill-hero .hill-photo { position: absolute; inset: 7% 7% 0; }
-.hill-hero img { transform-origin: 50% 80%; }
+.hill-hero img { transform-origin: 50% 80%; object-position: 50% 30%; }
 
 /* ---------- Meter (shown once the campaign numbers are set in main.js) ---------- */
 .meter { background: var(--deep); color: var(--on-deep); }
@@ -172,6 +183,8 @@ html[lang="en"] .hero h1 { font-size: clamp(2.5rem, 5.6vw, 5.5rem); }
 .story-in { display: grid; gap: 2.5rem; justify-items: center; text-align: center; }
 .story h2 { font-size: var(--t-h2); }
 .statement { font: 400 var(--t-statement)/1.45 var(--font-display); max-width: 28em; }
+.story-photo { width: 100%; aspect-ratio: 1 / 0.42; margin-top: 1.5rem; }
+.story-photo img { object-position: 50% 70%; }
 
 /* ---------- About: inset deep panel ---------- */
 .about { padding-inline: clamp(0.625rem, 1.4vw, 1.25rem); }

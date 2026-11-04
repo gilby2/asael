@@ -9,9 +9,9 @@
     try { lang = localStorage.getItem('asael-lang'); } catch (e) {}
   }
   if (lang === 'en') { root.lang = 'en'; root.dir = 'ltr'; }
-  // Review only: ?palette=olive|sky|fresh|dusk previews a colour option
+  // Review only: ?palette=olive|sky|fresh|dusk|sunset|spring previews a colour option
   try {
     var pal = new URLSearchParams(location.search).get('palette');
-    if (/^(olive|sky|fresh|dusk)$/.test(pal || '')) root.dataset.palette = pal;
+    if (/^(olive|sky|fresh|dusk|sunset|spring)$/.test(pal || '')) root.dataset.palette = pal;
   } catch (e) {}
 })();
