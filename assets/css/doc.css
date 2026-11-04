@@ -1,0 +1,6 @@
+/* Plain reading page (accessibility statement), on the landing page's tokens */
+.doc { max-width: 46rem; padding-block: 3rem 5rem; display: grid; gap: 1rem; }
+.doc h1 { font-size: var(--t-h2); }
+.doc h2 { font-size: var(--t-statement); margin-top: 1.5rem; }
+.doc .updated { color: var(--muted); }
+.doc .arcs { gap: 0.5rem; }
