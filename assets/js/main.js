@@ -54,18 +54,6 @@
     bar.firstElementChild.style.width = pct + '%';
   }
 
-  // ---------- "Here there will be" ----------
-  var picks = document.querySelectorAll('.pick');
-  var plots = document.querySelectorAll('.plot');
-
-  function choose(id) {
-    picks.forEach(function (p) { p.setAttribute('aria-pressed', String(p.dataset.pick === id)); });
-    plots.forEach(function (f) { f.classList.toggle('is-on', f.dataset.plot === id); });
-  }
-  picks.forEach(function (p) {
-    p.addEventListener('click', function () { choose(p.dataset.pick); });
-  });
-
   // ---------- Video ----------
   var box = document.getElementById('video');
   document.getElementById('video-play').addEventListener('click', function () {
@@ -139,7 +127,7 @@
       });
       dock.classList.toggle('is-away', visible.size > 0);
     });
-    [document.getElementById('donate'), document.querySelector('.foot'), document.querySelector('.hero'), document.querySelector('.picks')]
+    [document.getElementById('donate'), document.querySelector('.foot'), document.querySelector('.hero')]
       .forEach(function (el) { dio.observe(el); });
   }
 
