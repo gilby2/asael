@@ -241,7 +241,7 @@ html[dir="rtl"] .play svg { transform: none; }
 .hill-give { width: min(54vw, 52rem); aspect-ratio: 1 / 0.86; inset-inline-end: -3vw; bottom: -3rem; }
 .hill-give .hill-photo { position: absolute; inset: 6% 6% 0; }
 .give-in { position: relative; z-index: 1; padding-block: var(--gap-section); }
-.give-text { max-width: 30rem; display: grid; gap: 1.5rem; }
+.give-text { max-width: 36rem; display: grid; gap: 1.5rem; }
 .give h2 { font-size: var(--t-h2); }
 .give .btn { justify-self: start; }
 .fine { font-size: var(--t-small); color: var(--muted); }
