@@ -28,7 +28,6 @@
   document.querySelectorAll('[data-set-lang]').forEach(function (b) {
     b.addEventListener('click', function () {
       lang = b.dataset.setLang;
-      try { localStorage.setItem('asael-lang', lang); } catch (e) {}
       render();
     });
   });
